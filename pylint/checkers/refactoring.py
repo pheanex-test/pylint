@@ -491,16 +491,17 @@ class RefactoringChecker(checkers.BaseTokenChecker):
             ]
         except AttributeError:
             return
-        if not all(self._is_simple_assignment(node) for node in assignments):
+        if (not all(self._is_simple_assignment(node) for node in assignments)
+                or any(node in self._reported_swap_nodes for node in assignments)
+                or not all(utils.is_defined_before(node.value) for node in assignments)
+                or utils.is_defined_before(node.targets[0])):
             return
-        if any(node in self._reported_swap_nodes for node in assignments):
-            return
+
         left = [node.targets[0].name for node in assignments]
         right = [node.value.name for node in assignments]
         if left[0] == right[-1] and left[1:] == right[:-1]:
             self._reported_swap_nodes.update(assignments)
-            message = 'consider-swap-variables'
-            self.add_message(message, node=node)
+            self.add_message('consider-swap-variables', node=node)
 
     @utils.check_messages('simplify-boolean-expression',
                           'consider-using-ternary',
