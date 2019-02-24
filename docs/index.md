@@ -1,4 +1,5 @@
 # Index
+
 |Rule Code|Rule Name|
 |---|---|
 |[C0102](#C0102)|blacklisted-name|
