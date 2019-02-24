@@ -35,7 +35,7 @@
 | [C0412](#C0412) | ungrouped-imports |
 | [C0413](#C0413) | wrong-import-position |
 | [C1801](#C1801) | len-as-condition |
-| [E0001](#E0001) | syntax-error|Message Missing |
+| [E0001](#E0001) | syntax-error |
 | [E0011](#E0011) | unrecognized-inline-option |
 | [E0012](#E0012) | bad-option-value |
 | [E0100](#E0100) | init-is-generator |
