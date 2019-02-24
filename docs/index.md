@@ -3538,11 +3538,11 @@ Used when one of known pre-python 2.5 ternary syntax is used.
 
 **:x: Incorrect code**
 ```python
-#missing
+foo = a and b or c
 ```
 **:heavy_check_mark: Correct code**
 ```python
-#missing
+foo = b if a else c
 ```
 
 ### Why is this better?
@@ -3560,11 +3560,11 @@ In Python, a tuple is actually created by the comma symbol, not by the parenthes
 
 **:x: Incorrect code**
 ```python
-#missing
+foo = 1,
 ```
 **:heavy_check_mark: Correct code**
 ```python
-#missing
+foo = (1, )
 ```
 
 ### Why is this better?
@@ -3578,15 +3578,18 @@ In Python, a tuple is actually created by the comma symbol, not by the parenthes
 ## [W0101](#W0101) (unreachable)<a name="W0101"></a>
 Unreachable code.
 
-Used when there is some code behind a "return" or "raise" statement, which will never be accessed.
+Used when there is some code behind a `return`, `raise`, `break` or `continue` statement, which will never be accessed.
 
 **:x: Incorrect code**
 ```python
-#missing
+def foo():
+    return 1
+    print('unreachable')
 ```
 **:heavy_check_mark: Correct code**
 ```python
-#missing
+def foo():
+    return 1
 ```
 
 ### Why is this better?
@@ -3604,11 +3607,14 @@ Used when a mutable value as list or dictionary is detected in a default value f
 
 **:x: Incorrect code**
 ```python
-#missing
+def func(value=[]):
+    return value
 ```
 **:heavy_check_mark: Correct code**
 ```python
-#missing
+def func(value=None):
+    if value is None:
+        value = []
 ```
 
 ### Why is this better?
@@ -3618,6 +3624,7 @@ Used when a mutable value as list or dictionary is detected in a default value f
 ### Resources
 * [Testcases](https://github.com/PyCQA/pylint/blob/master/pylint/test/functional/dangerous-default-value.py)
 * [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"dangerous-default-value"+OR+"W0102")
+* [StackOverflow](https://stackoverflow.com/q/9526465)
 
 ## [W0104](#W0104) (pointless-statement)<a name="W0104"></a>
 Statement seems to have no effect.
