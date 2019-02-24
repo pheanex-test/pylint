@@ -1,5 +1,5 @@
 # Rules
-## [R1705](#R1705) (no-else-return)<a key="R1705" name="no-else-return"></a>
+## [R1705](#R1705) (no-else-return)<a name="R1705"></a>
 Reports an unnecessary `else` after `return`.
 Used in order to highlight an unnecessary block of code following an `if` containing a `return` statement.
 It will warn when it encounters an `else` following a chain of `if`'s, all of them containing a `return` statement.
