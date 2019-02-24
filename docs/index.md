@@ -14,7 +14,7 @@
 |[C0202](#C0202)|bad-classmethod-argument|Class method %s should have %s as first argument|
 |[C0203](#C0203)|bad-mcs-method-argument|Metaclass method %s should have %s as first argument|
 |[C0204](#C0204)|bad-mcs-classmethod-argument|Metaclass class method %s should have %s as first argument|
-|[C0205](#C0205)|single-string-used-for-slots|Class \__slots__ should be a non-string iterable|
+|[C0205](#C0205)|single-string-used-for-slots|Class `__slots__` should be a non-string iterable|
 |[C0301](#C0301)|line-too-long|Line too long (%s/%s)|
 |[C0302](#C0302)|too-many-lines|Too many lines in module (%s/%s)|
 |[C0303](#C0303)|trailing-whitespace|Trailing whitespace|
@@ -25,7 +25,7 @@
 |[C0326](#C0326)|bad-whitespace|%s space %s %s %s|
 |[C0327](#C0327)|mixed-line-endings|Mixed line endings LF and CRLF|
 |[C0328](#C0328)|unexpected-line-ending-format|Unexpected line ending format. There is '%s' while it should be '%s'.|
-|[C0330](#C0330)|bad-continuation|Wrong %s indentation%s%s.|
+|[C0330](#C0330)|bad-continuation|Wrong %s indentation.|
 |[C0401](#C0401)|wrong-spelling-in-comment|Wrong spelling of a word '%s' in a comment:|
 |[C0402](#C0402)|wrong-spelling-in-docstring|Wrong spelling of a word '%s' in a docstring:|
 |[C0403](#C0403)|invalid-characters-in-docstring|Invalid characters %r in a docstring|
@@ -34,56 +34,56 @@
 |[C0412](#C0412)|ungrouped-imports|Imports from package %s are not grouped|
 |[C0413](#C0413)|wrong-import-position|Import "%s" should be placed at the top of the module|
 |[C1801](#C1801)|len-as-condition|Do not use `len(SEQUENCE)` as condition value|
-\|[E0001](#E0001)|syntax-error|\<Message missing>|
+\|[E0001](#E0001)|syntax-error|Message Missing|
 |[E0011](#E0011)|unrecognized-inline-option|Unrecognized file option %r|
 |[E0012](#E0012)|bad-option-value|Bad option value %r|
-|[E0100](#E0100)|init-is-generator|\__init__ method is a generator|
-|[E0101](#E0101)|return-in-init|Explicit return in \__init__|
+|[E0100](#E0100)|init-is-generator|`__init__` method is a generator|
+|[E0101](#E0101)|return-in-init|Explicit return in `__init__`|
 |[E0102](#E0102)|function-redefined|%s already defined line %s|
 |[E0103](#E0103)|not-in-loop|%r not properly in loop|
 |[E0104](#E0104)|return-outside-function|Return outside function|
-|[E0105](#E0105)|yield-outside-function|Yield outside function|
+|[E0105](#E0105)|yield-outside-function|`Yield` outside function|
 |[E0107](#E0107)|nonexistent-operator|Use of the non-existent %s operator|
 |[E0108](#E0108)|duplicate-argument-name|Duplicate argument name %s in function definition|
 |[E0110](#E0110)|abstract-class-instantiated|Abstract class %r with abstract methods instantiated|
-|[E0111](#E0111)|bad-reversed-sequence|The first reversed() argument is not a sequence|
+|[E0111](#E0111)|bad-reversed-sequence|The first `reversed()` argument is not a sequence|
 |[E0112](#E0112)|too-many-star-expressions|More than one starred expression in assignment|
 |[E0113](#E0113)|invalid-star-assignment-target|Starred assignment target must be in a list or tuple|
 |[E0114](#E0114)|star-needs-assignment-target|Can use starred expression only in assignment target|
 |[E0115](#E0115)|nonlocal-and-global|Name %r is nonlocal and global|
-|[E0116](#E0116)|continue-in-finally|'continue' not supported inside 'finally' clause|
+|[E0116](#E0116)|continue-in-finally|'continue' not supported inside `finally` clause|
 |[E0117](#E0117)|nonlocal-without-binding|nonlocal name %s found without binding|
 |[E0118](#E0118)|used-prior-global-declaration|Name %r is used prior to global declaration|
 |[E0202](#E0202)|method-hidden|An attribute defined in %s line %s hides this method|
 |[E0203](#E0203)|access-member-before-definition|Access to member %r before its definition line %s|
 |[E0211](#E0211)|no-method-argument|Method has no argument|
-|[E0213](#E0213)|no-self-argument|Method should have "self" as first argument|
-|[E0236](#E0236)|invalid-slots-object|Invalid object %r in \__slots__, must contain only non empty strings|
+|[E0213](#E0213)|no-self-argument|Method should have `self` as first argument|
+|[E0236](#E0236)|invalid-slots-object|Invalid object %r in `__slots__`, must contain only non empty strings|
 |[E0237](#E0237)|assigning-non-slot|Assigning to attribute %r not defined in class slots|
-|[E0238](#E0238)|invalid-slots|Invalid \__slots__ object|
+|[E0238](#E0238)|invalid-slots|Invalid `__slots__` object|
 |[E0239](#E0239)|inherit-non-class|Inheriting %r, which is not a class.|
 |[E0240](#E0240)|inconsistent-mro|Inconsistent method resolution order for class %r|
 |[E0241](#E0241)|duplicate-bases|Duplicate bases for class %r|
-|[E0301](#E0301)|non-iterator-returned|__iter__ returns non-iterator|
+|[E0301](#E0301)|non-iterator-returned|`__iter__` returns non-iterator|
 |[E0302](#E0302)|unexpected-special-method-signature|The special method %r expects %s param(s), %d %s given|
-|[E0303](#E0303)|invalid-length-returned|__len__ does not return non-negative integer|
+|[E0303](#E0303)|invalid-length-returned|`__len__` does not return non-negative integer|
 |[E0401](#E0401)|import-error|Unable to import %s|
 |[E0402](#E0402)|relative-beyond-top-level|Attempted relative import beyond top-level package|
 |[E0601](#E0601)|used-before-assignment|Using variable %r before assignment|
 |[E0602](#E0602)|undefined-variable|Undefined variable %r|
-|[E0603](#E0603)|undefined-all-variable|Undefined variable name %r in __all__|
-|[E0604](#E0604)|invalid-all-object|Invalid object %r in __all__, must contain only strings|
+|[E0603](#E0603)|undefined-all-variable|Undefined variable name %r in `__all__`|
+|[E0604](#E0604)|invalid-all-object|Invalid object %r in `__all__`, must contain only strings|
 |[E0611](#E0611)|no-name-in-module|No name %r in module %r|
 |[E0632](#E0632)|unbalanced-tuple-unpacking|Possible unbalanced tuple unpacking wit|
 |[E0633](#E0633)|unpacking-non-sequence|Attempting to unpack a non-sequence%s|
 |[E0701](#E0701)|bad-except-order|Bad except clauses order (%s)|
 |[E0702](#E0702)|raising-bad-type|Raising %s while only classes or instances are allowed|
-|[E0703](#E0703)|bad-exception-context|Exception context set to something which is not an exception, nor None|
-|[E0704](#E0704)|misplaced-bare-raise|The raise statement is not inside an except clause|
+|[E0703](#E0703)|bad-exception-context|Exception context set to something which is not an exception, nor `None`|
+|[E0704](#E0704)|misplaced-bare-raise|`raise` is not inside an `except`-clause|
 |[E0710](#E0710)|raising-non-exception|Raising a new style class which doesn't inherit from BaseException|
 |[E0711](#E0711)|notimplemented-raised|NotImplemented raised - should raise NotImplementedError|
-|[E0712](#E0712)|catching-non-exception|E0712|
-|[E1003](#E1003)|bad-super-call|Bad first argument %r given to super()|
+|[E0712](#E0712)|catching-non-exception|Catching an exception which doesn't inherit from Exception: %s|
+|[E1003](#E1003)|bad-super-call|Bad first argument %r given to `super()`|
 |[E1101](#E1101)|no-member|%s %r has no %r member%s|
 |[E1102](#E1102)|not-callable|%s is not callable|
 |[E1111](#E1111)|assignment-from-no-return|Assigning to function call which doesn't return|
@@ -92,11 +92,11 @@
 |[E1123](#E1123)|unexpected-keyword-arg|Unexpected keyword argument %r in %s call|
 |[E1124](#E1124)|redundant-keyword-arg|Argument %r passed by position and keyword in %s call|
 |[E1125](#E1125)|missing-kwoa|Missing mandatory keyword argument %r in %s call|
-|[E1126](#E1126)|invalid-sequence-index|Sequence index is not an int, slice, or instance with __index__|
-|[E1127](#E1127)|invalid-slice-index|Slice index is not an int, None, or instance with __index__|
-|[E1128](#E1128)|assignment-from-none|Assigning to function call which only returns None|
-|[E1129](#E1129)|not-context-manager|Context manager '%s' doesn't implement __enter__ and __exit__.|
-|[E1130](#E1130)|invalid-unary-operand-type|Emitted when a unary operand is used on an object which does not support this type of operation|
+|[E1126](#E1126)|invalid-sequence-index|Sequence index is not an `int`, `slice`, or instance with `__index__`|
+|[E1127](#E1127)|invalid-slice-index|Slice index is not an `int`, `None`, or instance with `__index__`|
+|[E1128](#E1128)|assignment-from-none|Assigning to function call which only returns `None`|
+|[E1129](#E1129)|not-context-manager|Context manager '%s' doesn't implement `__enter__` and `__exit__`.|
+|[E1130](#E1130)|invalid-unary-operand-type|Missing description|
 |[E1133](#E1133)|not-an-iterable|Non-iterable value %s is used in an iterating context|
 |[E1134](#E1134)|not-a-mapping|Non-mapping value %s is used in a mapping context|
 |[E1135](#E1135)|unsupported-membership-test|Value '%s' doesn't support membership test|
@@ -116,10 +116,10 @@
 |[E1305](#E1305)|too-many-format-args|Too many arguments for format string|
 |[E1306](#E1306)|too-few-format-args|Not enough arguments for format string|
 |[E1310](#E1310)|bad-str-strip-call|Suspicious argument in %s.%s call|
-|[E1700](#E1700)|yield-inside-async-function|Yield inside async function|
-|[E1701](#E1701)|not-async-context-manager|Async context manager '%s' doesn't implement __aenter__ and __aexit__.|
-\|[F0001](#F0001)|fatal|\<Message missing>|
-\|[F0002](#F0002)|astroid-error|\<Message missing>|
+|[E1700](#E1700)|yield-inside-async-function|`yield` inside `async` function|
+|[E1701](#E1701)|not-async-context-manager|Async context manager '%s' doesn't implement `__aenter__` and `__aexit__`.|
+|[F0001](#F0001)|fatal|Message Missing|
+|[F0002](#F0002)|astroid-error|Message Missing|
 |[F0010](#F0010)|parse-error|error while code parsing: %s|
 |[F0202](#F0202)|method-check-failed|Unable to check methods signature (%s / %s)|
 |[I0001](#I0001)|raw-checker-failed|Unable to run raw checkers on built-in module %s|
@@ -148,9 +148,9 @@
 |[R0916](#R0916)|too-many-boolean-expressions|Too many boolean expressions in if statement (%s/%s)|
 |[R1701](#R1701)|consider-merging-isinstance|Consider merging these isinstance calls to isinstance(%s, (%s))|
 |[R1702](#R1702)|too-many-nested-blocks|Too many nested blocks (%s/%s)|
-|[R1703](#R1703)|simplifiable-if-statement|The if statement can be replaced with %s|
+|[R1703](#R1703)|simplifiable-if-statement|`if` can be replaced with %s|
 |[R1704](#R1704)|redefined-argument-from-local|Redefining argument with the local name %r|
-|[R1705](#R1705)|no-else-return|Unnecessary "else" after "return"|
+|[R1705](#R1705)|no-else-return|Unnecessary `else` after `return`|
 |[R1706](#R1706)|consider-using-ternary|Consider using ternary (%s if %s else %s)|
 |[R1707](#R1707)|trailing-comma-tuple|Disallow trailing comma tuple|
 |[W0101](#W0101)|unreachable|Unreachable code|
@@ -158,26 +158,26 @@
 |[W0104](#W0104)|pointless-statement|Statement seems to have no effect|
 |[W0105](#W0105)|pointless-string-statement|String statement has no effect|
 |[W0106](#W0106)|expression-not-assigned|Expression "%s" is assigned to nothing|
-|[W0107](#W0107)|unnecessary-pass|Unnecessary pass statement|
+|[W0107](#W0107)|unnecessary-pass|Unnecessary `pass`|
 |[W0108](#W0108)|unnecessary-lambda|Lambda may not be necessary|
 |[W0109](#W0109)|duplicate-key|Duplicate key %r in dictionary|
 |[W0111](#W0111)|assign-to-new-keyword|Name %s will become a keyword in Python %s|
-|[W0120](#W0120)|useless-else-on-loop|Else clause on loop without a break statement|
+|[W0120](#W0120)|useless-else-on-loop|`Else` clause on loop without a `break`|
 |[W0122](#W0122)|exec-used|Use of exec|
 |[W0123](#W0123)|eval-used|Use of eval|
 |[W0124](#W0124)|confusing-with-statement|Following "as" with another context manager looks like a tuple.|
 |[W0125](#W0125)|using-constant-test|Using a conditional statement with a constant value|
-|[W0150](#W0150)|lost-exception|%s statement in finally block may swallow exception|
+|[W0150](#W0150)|lost-exception|%s statement in `finally` block may swallow exception|
 |[W0199](#W0199)|assert-on-tuple|Assert called on a 2-uple. Did you mean 'assert x,y'?|
-|[W0201](#W0201)|attribute-defined-outside-init|Attribute %r defined outside \__init__|
+|[W0201](#W0201)|attribute-defined-outside-init|Attribute %r defined outside `__init__`|
 |[W0211](#W0211)|bad-staticmethod-argument|Static method with %r as first argument|
 |[W0212](#W0212)|protected-access|Access to a protected member %s of a client class|
 |[W0221](#W0221)|arguments-differ|Parameters differ from %s %r method|
 |[W0222](#W0222)|signature-differs|Signature differs from %s %r method|
 |[W0223](#W0223)|abstract-method|Method %r is abstract in class %r but is not overridden|
-|[W0231](#W0231)|super-init-not-called|\__init__ method from base class %r is not called|
-|[W0232](#W0232)|no-init|Class has no \__init__ method|
-|[W0233](#W0233)|non-parent-init-called|\__init__ method from a non direct base class %r is called|
+|[W0231](#W0231)|super-init-not-called|`__init__` method from base class %r is not called|
+|[W0232](#W0232)|no-init|Class has no `__init__` method|
+|[W0233](#W0233)|non-parent-init-called|`__init__` method from a non direct base class %r is called|
 |[W0235](#W0235)|useless-super-delegation|Useless super delegation in method %r|
 |[W0301](#W0301)|unnecessary-semicolon|Unnecessary semicolon|
 |[W0311](#W0311)|bad-indentation|Bad indentation. Found %s %s, expected %s|
@@ -186,12 +186,12 @@
 |[W0402](#W0402)|deprecated-module|Uses of a deprecated module %r|
 |[W0404](#W0404)|reimported|Reimport %r (imported line %s)|
 |[W0406](#W0406)|import-self|Module import itself|
-|[W0410](#W0410)|misplaced-future|__future__ import is not the first non docstring statement|
-\|[W0511](#W0511)|fixme|\<Message missing>|
+|[W0410](#W0410)|misplaced-future|`__future__` import is not the first non docstring statement|
+|[W0511](#W0511)|fixme|Message Missing|
 |[W0601](#W0601)|global-variable-undefined|Global variable %r undefined at the module level|
-|[W0602](#W0602)|global-variable-not-assigned|Using global for %r but no assignment is done|
-|[W0603](#W0603)|global-statement|Using the global statement|
-|[W0604](#W0604)|global-at-module-level|Using the global statement at the module level|
+|[W0602](#W0602)|global-variable-not-assigned|Using `global` for %r but no assignment is done|
+|[W0603](#W0603)|global-statement|Using the `global` statement|
+|[W0604](#W0604)|global-at-module-level|Using the `global` statement at the module level|
 |[W0611](#W0611)|unused-import|Unused %s|
 |[W0612](#W0612)|unused-variable|Unused variable %r|
 |[W0613](#W0613)|unused-argument|Unused argument %r|
@@ -206,7 +206,7 @@
 |[W0705](#W0705)|duplicate-except|Catching previously caught exception type %s|
 |[W0711](#W0711)|binary-op-exception|Exception to catch is the result of a binary "%s" operation|
 |[W1201](#W1201)|logging-not-lazy|Specify string format arguments as logging function parameters|
-|[W1202](#W1202)|logging-format-interpolation|Use % formatting in logging functions and pass the % parameters as arguments|
+|[W1202](#W1202)|logging-format-interpolation|Use `%` formatting in logging functions and pass the `%`-parameters as arguments|
 |[W1300](#W1300)|bad-format-string-key|Format string dictionary key should be a string, not %s|
 |[W1301](#W1301)|unused-format-string-key|Unused key %r in format string dictionary|
 |[W1302](#W1302)|bad-format-string|Invalid format string|
@@ -217,7 +217,7 @@
 |[W1307](#W1307)|invalid-format-index|Using invalid lookup key %r in format specifier %r|
 |[W1401](#W1401)|anomalous-backslash-in-string|Anomalous backslash in string: '%s'. String constant might be missing an r prefix.|
 |[W1402](#W1402)|anomalous-unicode-escape-in-string|Anomalous Unicode escape in byte string: '%s'. String constant might be missing an r or u prefix.|
-|[W1501](#W1501)|bad-open-mode|"%s" is not a valid mode for open|
+|[W1501](#W1501)|bad-open-mode|"%s" is not a valid mode for `open`|
 |[W1503](#W1503)|redundant-unittest-assert|Redundant use of %s with constant value %r|
 |[W1505](#W1505)|deprecated-method|Using deprecated method %s()|
 
@@ -270,7 +270,7 @@ Used when the name doesn't match the regular expression associated to its type (
 ## [C0111](#C0111) (missing-docstring)<a name="C0111"></a>
 Missing %s docstring.
 
-Used when a module, function, class or method has no docstring.Some special methods like \__init__ doesn't necessary require a docstring.
+Used when a module, function, class or method has no docstring.Some special methods like `__init__` doesn't necessary require a docstring.
 
 **:x: Incorrect code**
 ```python
@@ -510,9 +510,9 @@ Used when a metaclass class method has a first argument named differently than t
 * [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"bad-mcs-classmethod-argument"+OR+"C0204")
 
 ## [C0205](#C0205) (single-string-used-for-slots)<a name="C0205"></a>
-Class \__slots__ should be a non-string iterable.
+Class `__slots__` should be a non-string iterable.
 
-Used when a class \__slots__ is a simple string, rather than an iterable.
+Used when a class `__slots__` is a simple string, rather than an iterable.
 
 **:x: Incorrect code**
 ```python
@@ -950,7 +950,7 @@ Used when Pylint detects incorrect use of len(sequence) inside conditions.
 * [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"len-as-condition"+OR+"C1801")
 
 ## [E0001](#E0001) (syntax-error)<a name="E0001"></a>
-\<Message missing>.
+Message Missing.
 
 Used when a syntax error is raised for a module.
 
@@ -1016,9 +1016,9 @@ Used when a bad value for an inline option is encountered.
 * [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"bad-option-value"+OR+"E0012")
 
 ## [E0100](#E0100) (init-is-generator)<a name="E0100"></a>
-\__init__ method is a generator.
+`__init__` method is a generator.
 
-Used when the special class method \__init__ is turned into a generator by a yield in its body.
+Used when the special class method `__init__` is turned into a generator by a yield in its body.
 
 **:x: Incorrect code**
 ```python
@@ -1038,9 +1038,9 @@ Used when the special class method \__init__ is turned into a generator by a yie
 * [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"init-is-generator"+OR+"E0100")
 
 ## [E0101](#E0101) (return-in-init)<a name="E0101"></a>
-Explicit return in \__init__.
+Explicit return in `__init__`.
 
-Used when the special class method \__init__ has an explicit return value.
+Used when the special class method `__init__` has an explicit return value.
 
 **:x: Incorrect code**
 ```python
@@ -1216,7 +1216,7 @@ Used when an abstract class with `abc.ABCMeta` as metaclass has abstract methods
 ## [E0111](#E0111) (bad-reversed-sequence)<a name="E0111"></a>
 The first reversed() argument is not a sequence.
 
-Used when the first argument to reversed() builtin isn't a sequence (does not implement __reversed__, nor __getitem__ and __len__
+Used when the first argument to reversed() builtin isn't a sequence (does not implement __reversed__, nor __getitem__ and `__len__`
 
 **:x: Incorrect code**
 ```python
@@ -1478,9 +1478,9 @@ Used when a method has an attribute different the "self" as first argument. This
 * [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"no-self-argument"+OR+"E0213")
 
 ## [E0236](#E0236) (invalid-slots-object)<a name="E0236"></a>
-Invalid object %r in \__slots__, must contain only non empty strings.
+Invalid object %r in `__slots__`, must contain only non empty strings.
 
-Used when an invalid (non-string) object occurs in \__slots__.
+Used when an invalid (non-string) object occurs in `__slots__`.
 
 **:x: Incorrect code**
 ```python
@@ -1522,9 +1522,9 @@ Used when assigning to an attribute not defined in the class slots.
 * [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"assigning-non-slot"+OR+"E0237")
 
 ## [E0238](#E0238) (invalid-slots)<a name="E0238"></a>
-Invalid \__slots__ object.
+Invalid `__slots__` object.
 
-Used when an invalid \__slots__ is found in class. Only a string, an iterable or a sequence is permitted.
+Used when an invalid `__slots__` is found in class. Only a string, an iterable or a sequence is permitted.
 
 **:x: Incorrect code**
 ```python
@@ -1610,9 +1610,9 @@ Used when a class has duplicate bases.
 * [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"duplicate-bases"+OR+"E0241")
 
 ## [E0301](#E0301) (non-iterator-returned)<a name="E0301"></a>
-__iter__ returns non-iterator.
+`__iter__` returns non-iterator.
 
-Used when an __iter__ method returns something which is not an iterable (i.e. has no `__next__` method)
+Used when an `__iter__` method returns something which is not an iterable (i.e. has no `__next__` method)
 
 **:x: Incorrect code**
 ```python
@@ -1654,9 +1654,9 @@ Emitted when a special method was defined with an invalid number of parameters. 
 * [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"unexpected-special-method-signature"+OR+"E0302")
 
 ## [E0303](#E0303) (invalid-length-returned)<a name="E0303"></a>
-__len__ does not return non-negative integer.
+`__len__` does not return non-negative integer.
 
-Used when an __len__ method returns something which is not a non-negative integer
+Used when an `__len__` method returns something which is not a non-negative integer
 
 **:x: Incorrect code**
 ```python
@@ -1764,9 +1764,9 @@ Used when an undefined variable is accessed.
 * [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"undefined-variable"+OR+"E0602")
 
 ## [E0603](#E0603) (undefined-all-variable)<a name="E0603"></a>
-Undefined variable name %r in __all__.
+Undefined variable name %r in `__all__`.
 
-Used when an undefined variable name is referenced in __all__.
+Used when an undefined variable name is referenced in `__all__`.
 
 **:x: Incorrect code**
 ```python
@@ -1786,9 +1786,9 @@ Used when an undefined variable name is referenced in __all__.
 * [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"undefined-all-variable"+OR+"E0603")
 
 ## [E0604](#E0604) (invalid-all-object)<a name="E0604"></a>
-Invalid object %r in __all__, must contain only strings.
+Invalid object %r in `__all__`, must contain only strings.
 
-Used when an invalid (non-string) object occurs in __all__.
+Used when an invalid (non-string) object occurs in `__all__`.
 
 **:x: Incorrect code**
 ```python
@@ -2226,9 +2226,9 @@ Used when a function call does not pass a mandatory keyword-only argument. This 
 * [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"missing-kwoa"+OR+"E1125")
 
 ## [E1126](#E1126) (invalid-sequence-index)<a name="E1126"></a>
-Sequence index is not an int, slice, or instance with __index__.
+Sequence index is not an int, slice, or instance with `__index__`.
 
-Used when a sequence type is indexed with an invalid type. Valid types are ints, slices, and objects with an __index__ method.
+Used when a sequence type is indexed with an invalid type. Valid types are ints, slices, and objects with an `__index__` method.
 
 **:x: Incorrect code**
 ```python
@@ -2248,9 +2248,9 @@ Used when a sequence type is indexed with an invalid type. Valid types are ints,
 * [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"invalid-sequence-index"+OR+"E1126")
 
 ## [E1127](#E1127) (invalid-slice-index)<a name="E1127"></a>
-Slice index is not an int, None, or instance with __index__.
+Slice index is not an int, None, or instance with `__index__`.
 
-Used when a slice index is not an integer, None, or an object with an __index__ method.
+Used when a slice index is not an integer, None, or an object with an `__index__` method.
 
 **:x: Incorrect code**
 ```python
@@ -2292,9 +2292,9 @@ Used when an assignment is done on a function call but the inferred function ret
 * [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"assignment-from-none"+OR+"E1128")
 
 ## [E1129](#E1129) (not-context-manager)<a name="E1129"></a>
-Context manager '%s' doesn't implement __enter__ and __exit__..
+Context manager '%s' doesn't implement `__enter__` and `__exit__`..
 
-Used when an instance in a with statement doesn't implement the context manager protocol(__enter__/__exit__).
+Used when an instance in a with statement doesn't implement the context manager protocol(`__enter__`/`__exit__`).
 
 **:x: Incorrect code**
 ```python
@@ -2382,7 +2382,7 @@ Used when a non-mapping value is used in place where mapping is expected
 ## [E1135](#E1135) (unsupported-membership-test)<a name="E1135"></a>
 Value '%s' doesn't support membership test.
 
-Emitted when an instance in membership test expression doesn't implement membership protocol (__contains__/__iter__/__getitem__)
+Emitted when an instance in membership test expression doesn't implement membership protocol (__contains__/`__iter__`/__getitem__)
 
 **:x: Incorrect code**
 ```python
@@ -2776,7 +2776,7 @@ Used when an `yield` or `yield from` statement is found inside an async function
 * [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"yield-inside-async-function"+OR+"E1700")
 
 ## [E1701](#E1701) (not-async-context-manager)<a name="E1701"></a>
-Async context manager '%s' doesn't implement __aenter__ and __aexit__..
+Async context manager '%s' doesn't implement `__aenter__` and `__aexit__`..
 
 Used when an async context manager is used with an object that does not implement the async context management protocol. This message can't be emitted when using Python < 3.5.
 
@@ -2798,7 +2798,7 @@ Used when an async context manager is used with an object that does not implemen
 * [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"not-async-context-manager"+OR+"E1701")
 
 ## [F0001](#F0001) (fatal)<a name="F0001"></a>
-\<Message missing>.
+Message Missing.
 	
 Used when an error occurred preventing the analysis of a module (unable to find it for instance).
 
@@ -2820,7 +2820,7 @@ Used when an error occurred preventing the analysis of a module (unable to find 
 * [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"fatal"+OR+"F0001")
 
 ## [F0002](#F0002) (astroid-error)<a name="F0002"></a>
-\<Message missing>.
+Message Missing.
 	
 Used when an unexpected error occurred while building the Astroid representation. This is usually accompanied by a traceback. Please report such errors!
 
@@ -3920,9 +3920,9 @@ A call of assert on a tuple will always evaluate to true if the tuple is not emp
 * [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"assert-on-tuple"+OR+"W0199")
 
 ## [W0201](#W0201) (attribute-defined-outside-init)<a name="W0201"></a>
-Attribute %r defined outside \__init__.
+Attribute %r defined outside `__init__`.
 
-Used when an instance attribute is defined outside the \__init__ method.
+Used when an instance attribute is defined outside the `__init__` method.
 
 **:x: Incorrect code**
 ```python
@@ -4052,9 +4052,9 @@ Used when an abstract method (i.e. raise NotImplementedError) is not overridden 
 * [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"abstract-method"+OR+"W0223")
 
 ## [W0231](#W0231) (super-init-not-called)<a name="W0231"></a>
-\__init__ method from base class %r is not called.
+`__init__` method from base class %r is not called.
 
-Used when an ancestor class method has an \__init__ method which is not called by a derived class.
+Used when an ancestor class method has an `__init__` method which is not called by a derived class.
 
 **:x: Incorrect code**
 ```python
@@ -4074,9 +4074,9 @@ Used when an ancestor class method has an \__init__ method which is not called b
 * [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"super-init-not-called"+OR+"W0231")
 
 ## [W0232](#W0232) (no-init)<a name="W0232"></a>
-Class has no \__init__ method.
+Class has no `__init__` method.
 
-Used when a class has no \__init__ method, neither its parent classes.
+Used when a class has no `__init__` method, neither its parent classes.
 
 **:x: Incorrect code**
 ```python
@@ -4096,9 +4096,9 @@ Used when a class has no \__init__ method, neither its parent classes.
 * [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"no-init"+OR+"W0232")
 
 ## [W0233](#W0233) (non-parent-init-called)<a name="W0233"></a>
-\__init__ method from a non direct base class %r is called.
+`__init__` method from a non direct base class %r is called.
 
-Used when an \__init__ method is called on a class which is not in the direct ancestors for the analysed class.
+Used when an `__init__` method is called on a class which is not in the direct ancestors for the analysed class.
 
 **:x: Incorrect code**
 ```python
@@ -4294,9 +4294,9 @@ Used when a module is importing itself.
 * [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"import-self"+OR+"W0406")
 
 ## [W0410](#W0410) (misplaced-future)<a name="W0410"></a>
-__future__ import is not the first non docstring statement.
+`__future__` import is not the first non docstring statement.
 
-Python 2.5 and greater require __future__ import to be the first non docstring statement in the module.
+Python 2.5 and greater require `__future__` import to be the first non docstring statement in the module.
 
 **:x: Incorrect code**
 ```python
@@ -4316,7 +4316,7 @@ Python 2.5 and greater require __future__ import to be the first non docstring s
 * [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"misplaced-future"+OR+"W0410")
 
 ## [W0511](#W0511) (fixme)<a name="W0511"></a>
-\<Message missing>.
+Message Missing.
 	
 Used when a warning note as FIXME or XXX is detected.
 
