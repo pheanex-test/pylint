@@ -246,8 +246,7 @@ def foo(x):
 \<Here we will explain to the user why this is better and provide some context>
 
 
-#### Resources <Links for further discussions>
+#### Resources
 * [Testcases](https://github.com/PyCQA/pylint/blob/master/pylint/test/functional/no_else_return.py)
 * [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"no-else-return"+OR+"R1705")
 * [StackOverflow: It is more efficient to use if-return-return or if-else-return?](https://stackoverflow.com/q/9191388)
-
