@@ -3509,11 +3509,18 @@ Used in order to highlight an unnecessary block of code following an if containi
 
 **:x: Incorrect code**
 ```python
-#missing
+def foo(x):
+    if x:
+        return 1
+    else:
+        return 2
 ```
 **:heavy_check_mark: Correct code**
 ```python
-#missing
+def foo(x):
+    if x:
+        return 1
+    return 2
 ```
 
 ### Why is this better?
