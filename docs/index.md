@@ -3,7 +3,6 @@
 ## Index
 |Rule Code|Rule Name|Rule Description|
 |--|--|--|
-|[R1705](#R1705)|no-else-return|
 |[C0102](#C0102)|blacklisted-name|
 |[C0103](#C0103)|invalid-name|
 |[C0111](#C0111)|missing-docstring|
