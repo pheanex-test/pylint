@@ -1,7 +1,7 @@
 # Index
 
 | Rule Code | Rule Name |
-| --- | --- |
+| :---: | --- |
 | [C0102](#C0102) | blacklisted-name |
 | [C0103](#C0103) | invalid-name |
 | [C0111](#C0111) | missing-docstring |
