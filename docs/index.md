@@ -1,28 +1,31 @@
-R1705 (no-else-return)
-== Unnecessary "else" after "return" ==
 
-bade code:
-def foo(x):
+# R1705 / no-else-return
+## Description
+Reports an unnecessary "else" after "return".
+Used in order to highlight an unnecessary block of code following an if containing a return statement. As such, it will warn when it encounters an else following a chain of ifs, all of them containing a return statement.
+
+**:x: Incorrect code**
+```python
+ def foo(x):
     if x:
         return 1
     else:
         return 2
-
-good code:
+```
+**:heavy_check_mark: Correct code**
+```python
 def foo(x):
     if x:
         return 1
     return 2
+```
 
-==Reasoning (answering "why is this better?"/Giving context):==
-Used in order to highlight an unnecessary block of
-code following an if containing a return statement.
-As such, it will warn when it encounters an else
-following a chain of ifs, all of them containing a
-return statement
+## Why is this better?
+\<Here we will explain to the user why this is better and provide some context>
 
-==Resources <Links for further discussions>:==
-* See all Testcases for this rule
-* Stackoverflow topics
-* Blog posts
-* ...
+
+## Resources <Links for further discussions>
+* [Testcases](https://github.com/PyCQA/pylint/blob/master/pylint/test/functional/no_else_return.py)
+* [Issue Tracker](https://github.com/PyCQA/pylint/issues?q=is%3Aissue+"no-else-return"+OR+"R1705")
+* [StackOverflow - It is more efficient to use if-return-return or if-else-return?](https://stackoverflow.com/questions/9191388/it-is-more-efficient-to-use-if-return-return-or-if-else-return/28250521)
+
