@@ -1,226 +1,226 @@
 # Index
 
-|Rule Code|Rule Name|
-|---|---|
-|[C0102](#C0102)|blacklisted-name|
-|[C0103](#C0103)|invalid-name|
-|[C0111](#C0111)|missing-docstring|
-|[C0112](#C0112)|empty-docstring|
-|[C0113](#C0113)|unneeded-not|
-|[C0121](#C0121)|singleton-comparison|
-|[C0122](#C0122)|misplaced-comparison-constant|
-|[C0123](#C0123)|unidiomatic-typecheck|
-|[C0200](#C0200)|consider-using-enumerate|
-|[C0201](#C0201)|consider-iterating-dictionary|
-|[C0202](#C0202)|bad-classmethod-argument|
-|[C0203](#C0203)|bad-mcs-method-argument|
-|[C0204](#C0204)|bad-mcs-classmethod-argument|
-|[C0205](#C0205)|single-string-used-for-slots|
-|[C0301](#C0301)|line-too-long|
-|[C0302](#C0302)|too-many-lines|
-|[C0303](#C0303)|trailing-whitespace|
-|[C0304](#C0304)|missing-final-newline|
-|[C0305](#C0305)|trailing-newlines|
-|[C0321](#C0321)|multiple-statements|
-|[C0325](#C0325)|superfluous-parens|
-|[C0326](#C0326)|bad-whitespace|
-|[C0327](#C0327)|mixed-line-endings|
-|[C0328](#C0328)|unexpected-line-ending-format|
-|[C0330](#C0330)|bad-continuation|
-|[C0401](#C0401)|wrong-spelling-in-comment|
-|[C0402](#C0402)|wrong-spelling-in-docstring|
-|[C0403](#C0403)|invalid-characters-in-docstring|
-|[C0410](#C0410)|multiple-imports|
-|[C0411](#C0411)|wrong-import-order|
-|[C0412](#C0412)|ungrouped-imports|
-|[C0413](#C0413)|wrong-import-position|
-|[C1801](#C1801)|len-as-condition|
-|[E0001](#E0001)|syntax-error|Message Missing|
-|[E0011](#E0011)|unrecognized-inline-option|
-|[E0012](#E0012)|bad-option-value|
-|[E0100](#E0100)|init-is-generator|
-|[E0101](#E0101)|return-in-init|
-|[E0102](#E0102)|function-redefined|
-|[E0103](#E0103)|not-in-loop|
-|[E0104](#E0104)|return-outside-function|
-|[E0105](#E0105)|yield-outside-function|
-|[E0107](#E0107)|nonexistent-operator|
-|[E0108](#E0108)|duplicate-argument-name|
-|[E0110](#E0110)|abstract-class-instantiated|
-|[E0111](#E0111)|bad-reversed-sequence|
-|[E0112](#E0112)|too-many-star-expressions|
-|[E0113](#E0113)|invalid-star-assignment-target|
-|[E0114](#E0114)|star-needs-assignment-target|
-|[E0115](#E0115)|nonlocal-and-global|
-|[E0116](#E0116)|continue-in-finally|
-|[E0117](#E0117)|nonlocal-without-binding|
-|[E0118](#E0118)|used-prior-global-declaration|
-|[E0202](#E0202)|method-hidden|
-|[E0203](#E0203)|access-member-before-definition|
-|[E0211](#E0211)|no-method-argument|
-|[E0213](#E0213)|no-self-argument|
-|[E0236](#E0236)|invalid-slots-object|
-|[E0237](#E0237)|assigning-non-slot|
-|[E0238](#E0238)|invalid-slots|
-|[E0239](#E0239)|inherit-non-class|
-|[E0240](#E0240)|inconsistent-mro|
-|[E0241](#E0241)|duplicate-bases|
-|[E0301](#E0301)|non-iterator-returned|
-|[E0302](#E0302)|unexpected-special-method-signature|
-|[E0303](#E0303)|invalid-length-returned|
-|[E0401](#E0401)|import-error|
-|[E0402](#E0402)|relative-beyond-top-level|
-|[E0601](#E0601)|used-before-assignment|
-|[E0602](#E0602)|undefined-variable|
-|[E0603](#E0603)|undefined-all-variable|
-|[E0604](#E0604)|invalid-all-object|
-|[E0611](#E0611)|no-name-in-module|
-|[E0632](#E0632)|unbalanced-tuple-unpacking|
-|[E0633](#E0633)|unpacking-non-sequence|
-|[E0701](#E0701)|bad-except-order|
-|[E0702](#E0702)|raising-bad-type|
-|[E0703](#E0703)|bad-exception-context|
-|[E0704](#E0704)|misplaced-bare-raise|
-|[E0710](#E0710)|raising-non-exception|
-|[E0711](#E0711)|notimplemented-raised|
-|[E0712](#E0712)|catching-non-exception|
-|[E1003](#E1003)|bad-super-call|
-|[E1101](#E1101)|no-member|
-|[E1102](#E1102)|not-callable|
-|[E1111](#E1111)|assignment-from-no-return|
-|[E1120](#E1120)|no-value-for-parameter|
-|[E1121](#E1121)|too-many-function-args|
-|[E1123](#E1123)|unexpected-keyword-arg|
-|[E1124](#E1124)|redundant-keyword-arg|
-|[E1125](#E1125)|missing-kwoa|
-|[E1126](#E1126)|invalid-sequence-index|
-|[E1127](#E1127)|invalid-slice-index|
-|[E1128](#E1128)|assignment-from-none|
-|[E1129](#E1129)|not-context-manager|
-|[E1130](#E1130)|invalid-unary-operand-type|
-|[E1133](#E1133)|not-an-iterable|
-|[E1134](#E1134)|not-a-mapping|
-|[E1135](#E1135)|unsupported-membership-test|
-|[E1136](#E1136)|unsubscriptable-object|
-|[E1137](#E1137)|unsupported-assignment-operation|
-|[E1138](#E1138)|unsupported-delete-operation|
-|[E1139](#E1139)|invalid-metaclass|
-|[E1200](#E1200)|logging-unsupported-format|
-|[E1201](#E1201)|logging-format-truncated|
-|[E1205](#E1205)|logging-too-many-args|
-|[E1206](#E1206)|logging-too-few-args|
-|[E1300](#E1300)|bad-format-character|
-|[E1301](#E1301)|truncated-format-string|
-|[E1302](#E1302)|mixed-format-string|
-|[E1303](#E1303)|format-needs-mapping|
-|[E1304](#E1304)|missing-format-string-key|
-|[E1305](#E1305)|too-many-format-args|
-|[E1306](#E1306)|too-few-format-args|
-|[E1310](#E1310)|bad-str-strip-call|
-|[E1700](#E1700)|yield-inside-async-function|
-|[E1701](#E1701)|not-async-context-manager|
-|[F0001](#F0001)|fatal|
-|[F0002](#F0002)|astroid-error|
-|[F0010](#F0010)|parse-error|
-|[F0202](#F0202)|method-check-failed|
-|[I0001](#I0001)|raw-checker-failed|
-|[I0010](#I0010)|bad-inline-option|
-|[I0011](#I0011)|locally-disabled|
-|[I0012](#I0012)|locally-enabled|
-|[I0013](#I0013)|file-ignored|
-|[I0020](#I0020)|suppressed-message|
-|[I0021](#I0021)|useless-suppression|
-|[I0022](#I0022)|deprecated-pragma|
-|[R0123](#R0123)|literal-comparison|
-|[R0201](#R0201)|no-self-use|
-|[R0202](#R0202)|no-classmethod-decorator|
-|[R0203](#R0203)|no-staticmethod-decorator|
-|[R0401](#R0401)|cyclic-import|
-|[R0801](#R0801)|duplicate-code|
-|[R0901](#R0901)|too-many-ancestors|
-|[R0902](#R0902)|too-many-instance-attributes|
-|[R0903](#R0903)|too-few-public-methods|
-|[R0904](#R0904)|too-many-public-methods|
-|[R0911](#R0911)|too-many-return-statements|
-|[R0912](#R0912)|too-many-branches|
-|[R0913](#R0913)|too-many-arguments|
-|[R0914](#R0914)|too-many-locals|
-|[R0915](#R0915)|too-many-statements|
-|[R0916](#R0916)|too-many-boolean-expressions|
-|[R1701](#R1701)|consider-merging-isinstance|
-|[R1702](#R1702)|too-many-nested-blocks|
-|[R1703](#R1703)|simplifiable-if-statement|
-|[R1704](#R1704)|redefined-argument-from-local|
-|[R1705](#R1705)|no-else-return|
-|[R1706](#R1706)|consider-using-ternary|
-|[R1707](#R1707)|trailing-comma-tuple|
-|[W0101](#W0101)|unreachable|
-|[W0102](#W0102)|dangerous-default-value|
-|[W0104](#W0104)|pointless-statement|
-|[W0105](#W0105)|pointless-string-statement|
-|[W0106](#W0106)|expression-not-assigned|
-|[W0107](#W0107)|unnecessary-pass|
-|[W0108](#W0108)|unnecessary-lambda|
-|[W0109](#W0109)|duplicate-key|
-|[W0111](#W0111)|assign-to-new-keyword|
-|[W0120](#W0120)|useless-else-on-loop|
-|[W0122](#W0122)|exec-used|
-|[W0123](#W0123)|eval-used|
-|[W0124](#W0124)|confusing-with-statement|
-|[W0125](#W0125)|using-constant-test|
-|[W0150](#W0150)|lost-exception|
-|[W0199](#W0199)|assert-on-tuple|
-|[W0201](#W0201)|attribute-defined-outside-init|
-|[W0211](#W0211)|bad-staticmethod-argument|
-|[W0212](#W0212)|protected-access|
-|[W0221](#W0221)|arguments-differ|
-|[W0222](#W0222)|signature-differs|
-|[W0223](#W0223)|abstract-method|
-|[W0231](#W0231)|super-init-not-called|
-|[W0232](#W0232)|no-init|
-|[W0233](#W0233)|non-parent-init-called|
-|[W0235](#W0235)|useless-super-delegation|
-|[W0301](#W0301)|unnecessary-semicolon|
-|[W0311](#W0311)|bad-indentation|
-|[W0312](#W0312)|mixed-indentation|
-|[W0401](#W0401)|wildcard-import|
-|[W0402](#W0402)|deprecated-module|
-|[W0404](#W0404)|reimported|
-|[W0406](#W0406)|import-self|
-|[W0410](#W0410)|misplaced-future|
-|[W0511](#W0511)|fixme|
-|[W0601](#W0601)|global-variable-undefined|
-|[W0602](#W0602)|global-variable-not-assigned|
-|[W0603](#W0603)|global-statement|
-|[W0604](#W0604)|global-at-module-level|
-|[W0611](#W0611)|unused-import|
-|[W0612](#W0612)|unused-variable|
-|[W0613](#W0613)|unused-argument|
-|[W0614](#W0614)|unused-wildcard-import|
-|[W0621](#W0621)|redefined-outer-name|
-|[W0622](#W0622)|redefined-builtin|
-|[W0623](#W0623)|redefine-in-handler|
-|[W0631](#W0631)|undefined-loop-variable|
-|[W0640](#W0640)|cell-var-from-loop|
-|[W0702](#W0702)|bare-except|
-|[W0703](#W0703)|broad-except|
-|[W0705](#W0705)|duplicate-except|
-|[W0711](#W0711)|binary-op-exception|
-|[W1201](#W1201)|logging-not-lazy|
-|[W1202](#W1202)|logging-format-interpolation|
-|[W1300](#W1300)|bad-format-string-key|
-|[W1301](#W1301)|unused-format-string-key|
-|[W1302](#W1302)|bad-format-string|
-|[W1303](#W1303)|missing-format-argument-key|
-|[W1304](#W1304)|unused-format-string-argument|
-|[W1305](#W1305)|format-combined-specification|
-|[W1306](#W1306)|missing-format-attribute|
-|[W1307](#W1307)|invalid-format-index|
-|[W1401](#W1401)|anomalous-backslash-in-string|
-|[W1402](#W1402)|anomalous-unicode-escape-in-string|
-|[W1501](#W1501)|bad-open-mode|
-|[W1503](#W1503)|redundant-unittest-assert|
-|[W1505](#W1505)|deprecated-method|
+| Rule Code | Rule Name |
+| --- | --- |
+| [C0102](#C0102) | blacklisted-name |
+| [C0103](#C0103) | invalid-name |
+| [C0111](#C0111) | missing-docstring |
+| [C0112](#C0112) | empty-docstring |
+| [C0113](#C0113) | unneeded-not |
+| [C0121](#C0121) | singleton-comparison |
+| [C0122](#C0122) | misplaced-comparison-constant |
+| [C0123](#C0123) | unidiomatic-typecheck |
+| [C0200](#C0200) | consider-using-enumerate |
+| [C0201](#C0201) | consider-iterating-dictionary |
+| [C0202](#C0202) | bad-classmethod-argument |
+| [C0203](#C0203) | bad-mcs-method-argument |
+| [C0204](#C0204) | bad-mcs-classmethod-argument |
+| [C0205](#C0205) | single-string-used-for-slots |
+| [C0301](#C0301) | line-too-long |
+| [C0302](#C0302) | too-many-lines |
+| [C0303](#C0303) | trailing-whitespace |
+| [C0304](#C0304) | missing-final-newline |
+| [C0305](#C0305) | trailing-newlines |
+| [C0321](#C0321) | multiple-statements |
+| [C0325](#C0325) | superfluous-parens |
+| [C0326](#C0326) | bad-whitespace |
+| [C0327](#C0327) | mixed-line-endings |
+| [C0328](#C0328) | unexpected-line-ending-format |
+| [C0330](#C0330) | bad-continuation |
+| [C0401](#C0401) | wrong-spelling-in-comment |
+| [C0402](#C0402) | wrong-spelling-in-docstring |
+| [C0403](#C0403) | invalid-characters-in-docstring |
+| [C0410](#C0410) | multiple-imports |
+| [C0411](#C0411) | wrong-import-order |
+| [C0412](#C0412) | ungrouped-imports |
+| [C0413](#C0413) | wrong-import-position |
+| [C1801](#C1801) | len-as-condition |
+| [E0001](#E0001) | syntax-error|Message Missing |
+| [E0011](#E0011) | unrecognized-inline-option |
+| [E0012](#E0012) | bad-option-value |
+| [E0100](#E0100) | init-is-generator |
+| [E0101](#E0101) | return-in-init |
+| [E0102](#E0102) | function-redefined |
+| [E0103](#E0103) | not-in-loop |
+| [E0104](#E0104) | return-outside-function |
+| [E0105](#E0105) | yield-outside-function |
+| [E0107](#E0107) | nonexistent-operator |
+| [E0108](#E0108) | duplicate-argument-name |
+| [E0110](#E0110) | abstract-class-instantiated |
+| [E0111](#E0111) | bad-reversed-sequence |
+| [E0112](#E0112) | too-many-star-expressions |
+| [E0113](#E0113) | invalid-star-assignment-target |
+| [E0114](#E0114) | star-needs-assignment-target |
+| [E0115](#E0115) | nonlocal-and-global |
+| [E0116](#E0116) | continue-in-finally |
+| [E0117](#E0117) | nonlocal-without-binding |
+| [E0118](#E0118) | used-prior-global-declaration |
+| [E0202](#E0202) | method-hidden |
+| [E0203](#E0203) | access-member-before-definition |
+| [E0211](#E0211) | no-method-argument |
+| [E0213](#E0213) | no-self-argument |
+| [E0236](#E0236) | invalid-slots-object |
+| [E0237](#E0237) | assigning-non-slot |
+| [E0238](#E0238) | invalid-slots |
+| [E0239](#E0239) | inherit-non-class |
+| [E0240](#E0240) | inconsistent-mro |
+| [E0241](#E0241) | duplicate-bases |
+| [E0301](#E0301) | non-iterator-returned |
+| [E0302](#E0302) | unexpected-special-method-signature |
+| [E0303](#E0303) | invalid-length-returned |
+| [E0401](#E0401) | import-error |
+| [E0402](#E0402) | relative-beyond-top-level |
+| [E0601](#E0601) | used-before-assignment |
+| [E0602](#E0602) | undefined-variable |
+| [E0603](#E0603) | undefined-all-variable |
+| [E0604](#E0604) | invalid-all-object |
+| [E0611](#E0611) | no-name-in-module |
+| [E0632](#E0632) | unbalanced-tuple-unpacking |
+| [E0633](#E0633) | unpacking-non-sequence |
+| [E0701](#E0701) | bad-except-order |
+| [E0702](#E0702) | raising-bad-type |
+| [E0703](#E0703) | bad-exception-context |
+| [E0704](#E0704) | misplaced-bare-raise |
+| [E0710](#E0710) | raising-non-exception |
+| [E0711](#E0711) | notimplemented-raised |
+| [E0712](#E0712) | catching-non-exception |
+| [E1003](#E1003) | bad-super-call |
+| [E1101](#E1101) | no-member |
+| [E1102](#E1102) | not-callable |
+| [E1111](#E1111) | assignment-from-no-return |
+| [E1120](#E1120) | no-value-for-parameter |
+| [E1121](#E1121) | too-many-function-args |
+| [E1123](#E1123) | unexpected-keyword-arg |
+| [E1124](#E1124) | redundant-keyword-arg |
+| [E1125](#E1125) | missing-kwoa |
+| [E1126](#E1126) | invalid-sequence-index |
+| [E1127](#E1127) | invalid-slice-index |
+| [E1128](#E1128) | assignment-from-none |
+| [E1129](#E1129) | not-context-manager |
+| [E1130](#E1130) | invalid-unary-operand-type |
+| [E1133](#E1133) | not-an-iterable |
+| [E1134](#E1134) | not-a-mapping |
+| [E1135](#E1135) | unsupported-membership-test |
+| [E1136](#E1136) | unsubscriptable-object |
+| [E1137](#E1137) | unsupported-assignment-operation |
+| [E1138](#E1138) | unsupported-delete-operation |
+| [E1139](#E1139) | invalid-metaclass |
+| [E1200](#E1200) | logging-unsupported-format |
+| [E1201](#E1201) | logging-format-truncated |
+| [E1205](#E1205) | logging-too-many-args |
+| [E1206](#E1206) | logging-too-few-args |
+| [E1300](#E1300) | bad-format-character |
+| [E1301](#E1301) | truncated-format-string |
+| [E1302](#E1302) | mixed-format-string |
+| [E1303](#E1303) | format-needs-mapping |
+| [E1304](#E1304) | missing-format-string-key |
+| [E1305](#E1305) | too-many-format-args |
+| [E1306](#E1306) | too-few-format-args |
+| [E1310](#E1310) | bad-str-strip-call |
+| [E1700](#E1700) | yield-inside-async-function |
+| [E1701](#E1701) | not-async-context-manager |
+| [F0001](#F0001) | fatal |
+| [F0002](#F0002) | astroid-error |
+| [F0010](#F0010) | parse-error |
+| [F0202](#F0202) | method-check-failed |
+| [I0001](#I0001) | raw-checker-failed |
+| [I0010](#I0010) | bad-inline-option |
+| [I0011](#I0011) | locally-disabled |
+| [I0012](#I0012) | locally-enabled |
+| [I0013](#I0013) | file-ignored |
+| [I0020](#I0020) | suppressed-message |
+| [I0021](#I0021) | useless-suppression |
+| [I0022](#I0022) | deprecated-pragma |
+| [R0123](#R0123) | literal-comparison |
+| [R0201](#R0201) | no-self-use |
+| [R0202](#R0202) | no-classmethod-decorator |
+| [R0203](#R0203) | no-staticmethod-decorator |
+| [R0401](#R0401) | cyclic-import |
+| [R0801](#R0801) | duplicate-code |
+| [R0901](#R0901) | too-many-ancestors |
+| [R0902](#R0902) | too-many-instance-attributes |
+| [R0903](#R0903) | too-few-public-methods |
+| [R0904](#R0904) | too-many-public-methods |
+| [R0911](#R0911) | too-many-return-statements |
+| [R0912](#R0912) | too-many-branches |
+| [R0913](#R0913) | too-many-arguments |
+| [R0914](#R0914) | too-many-locals |
+| [R0915](#R0915) | too-many-statements |
+| [R0916](#R0916) | too-many-boolean-expressions |
+| [R1701](#R1701) | consider-merging-isinstance |
+| [R1702](#R1702) | too-many-nested-blocks |
+| [R1703](#R1703) | simplifiable-if-statement |
+| [R1704](#R1704) | redefined-argument-from-local |
+| [R1705](#R1705) | no-else-return |
+| [R1706](#R1706) | consider-using-ternary |
+| [R1707](#R1707) | trailing-comma-tuple |
+| [W0101](#W0101) | unreachable |
+| [W0102](#W0102) | dangerous-default-value |
+| [W0104](#W0104) | pointless-statement |
+| [W0105](#W0105) | pointless-string-statement |
+| [W0106](#W0106) | expression-not-assigned |
+| [W0107](#W0107) | unnecessary-pass |
+| [W0108](#W0108) | unnecessary-lambda |
+| [W0109](#W0109) | duplicate-key |
+| [W0111](#W0111) | assign-to-new-keyword |
+| [W0120](#W0120) | useless-else-on-loop |
+| [W0122](#W0122) | exec-used |
+| [W0123](#W0123) | eval-used |
+| [W0124](#W0124) | confusing-with-statement |
+| [W0125](#W0125) | using-constant-test |
+| [W0150](#W0150) | lost-exception |
+| [W0199](#W0199) | assert-on-tuple |
+| [W0201](#W0201) | attribute-defined-outside-init |
+| [W0211](#W0211) | bad-staticmethod-argument |
+| [W0212](#W0212) | protected-access |
+| [W0221](#W0221) | arguments-differ |
+| [W0222](#W0222) | signature-differs |
+| [W0223](#W0223) | abstract-method |
+| [W0231](#W0231) | super-init-not-called |
+| [W0232](#W0232) | no-init |
+| [W0233](#W0233) | non-parent-init-called |
+| [W0235](#W0235) | useless-super-delegation |
+| [W0301](#W0301) | unnecessary-semicolon |
+| [W0311](#W0311) | bad-indentation |
+| [W0312](#W0312) | mixed-indentation |
+| [W0401](#W0401) | wildcard-import |
+| [W0402](#W0402) | deprecated-module |
+| [W0404](#W0404) | reimported |
+| [W0406](#W0406) | import-self |
+| [W0410](#W0410) | misplaced-future |
+| [W0511](#W0511) | fixme |
+| [W0601](#W0601) | global-variable-undefined |
+| [W0602](#W0602) | global-variable-not-assigned |
+| [W0603](#W0603) | global-statement |
+| [W0604](#W0604) | global-at-module-level |
+| [W0611](#W0611) | unused-import |
+| [W0612](#W0612) | unused-variable |
+| [W0613](#W0613) | unused-argument |
+| [W0614](#W0614) | unused-wildcard-import |
+| [W0621](#W0621) | redefined-outer-name |
+| [W0622](#W0622) | redefined-builtin |
+| [W0623](#W0623) | redefine-in-handler |
+| [W0631](#W0631) | undefined-loop-variable |
+| [W0640](#W0640) | cell-var-from-loop |
+| [W0702](#W0702) | bare-except |
+| [W0703](#W0703) | broad-except |
+| [W0705](#W0705) | duplicate-except |
+| [W0711](#W0711) | binary-op-exception |
+| [W1201](#W1201) | logging-not-lazy |
+| [W1202](#W1202) | logging-format-interpolation |
+| [W1300](#W1300) | bad-format-string-key |
+| [W1301](#W1301) | unused-format-string-key |
+| [W1302](#W1302) | bad-format-string |
+| [W1303](#W1303) | missing-format-argument-key |
+| [W1304](#W1304) | unused-format-string-argument |
+| [W1305](#W1305) | format-combined-specification |
+| [W1306](#W1306) | missing-format-attribute |
+| [W1307](#W1307) | invalid-format-index |
+| [W1401](#W1401) | anomalous-backslash-in-string |
+| [W1402](#W1402) | anomalous-unicode-escape-in-string |
+| [W1501](#W1501) | bad-open-mode |
+| [W1503](#W1503) | redundant-unittest-assert |
+| [W1505](#W1505) | deprecated-method |
 
 
 
